@@ -1,29 +1,29 @@
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.Windows;
+using Unity.VisualScripting;
+
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] InputActionAsset inputAsset;
-    PlayerInput input;
-    InputAction moveAction;
-    [SerializeField] CharacterController controller;
-    [SerializeField] int speed;
-    Vector2 movementInput;
     // Start is called before the first frame update
     void Start()
     {
-        moveAction = inputAsset.FindAction("Move");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        movementInput = moveAction.ReadValue<Vector2>();
 
-        Vector3 move = movementInput.x * transform.right + movementInput.y * transform.forward;
+    }
 
-
-        controller.Move(move * speed * Time.deltaTime);
+    public void Reload()
+    {
+        
+        int currentAmmo = (int)Variables.Object(gameObject).Get("ammo");
+        int ammoReserves = (int)Variables.Object(gameObject).Get("ammoReserve");
+        int ammoDifference = 5 - currentAmmo;
+        int reloadAmount = Mathf.Min(ammoReserves, ammoDifference);
+        Variables.Object(gameObject).Set("ammo", currentAmmo + reloadAmount);
+        Variables.Object(gameObject).Set("ammoReserve", ammoReserves - reloadAmount); 
     }
 }

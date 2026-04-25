@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Terrain
   - CinemachineTarget
+  - First Aid Kit
+  - Ammo
+  - Locker
   layers:
   - Default
   - TransparentFX

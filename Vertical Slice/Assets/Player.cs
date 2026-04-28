@@ -1,6 +1,7 @@
 using UnityEngine;
 using Unity.VisualScripting;
 using Unity.Cinemachine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -65,5 +66,9 @@ public class Player : MonoBehaviour
                 }
             }
         }
+    }
+    public void EndGame()
+    {
+        SceneManager.LoadScene("Main");
     }
 }

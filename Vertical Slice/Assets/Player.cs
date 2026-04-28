@@ -34,38 +34,35 @@ public class Player : MonoBehaviour
     }
     public void LockCamera()
     {
-        GameObject cameraLocator = (GameObject)Variables.Object(gameObject).Get("cameraLocator");
-        Vector3 cameraLocatorPos = cameraLocator.transform.position;
-        Quaternion lockerFacing = (Quaternion)Variables.Object(gameObject).Get("lockerFacing");
-        /*
-        foreach (var c in axisController.Controllers)
+        cinemachineCamera.SetActive(false);
+        
+        foreach (Transform child in transform)
         {
-            Debug.Log(c);
-            if (c.Name == "Look X (Pan)")
+            if (child.gameObject.name == "Survivalist (3)")
             {
-                c.Input.Gain = 0;  
-            }
-            if (c.Name == "Look Y (Tilt)")
-            {
-                c.Input.Gain = 0;
+                foreach (Transform children in child)
+                {
+                    child.gameObject.SetActive(false);
+                }
             }
         }
-        */
-        cinemachineCamera.SetActive(false);
-        Camera.ForceCameraPosition(cameraLocatorPos, lockerFacing);
     }
 
     public void UnLockCamera()
     {
-        foreach (var c in axisController.Controllers)
+        cinemachineCamera.SetActive(true);
+        foreach (Transform child in transform)
         {
-            if (c.Name == "Look X (Pan)")
+            if (child.gameObject.name == "Survivalist (3)")
             {
-                c.Input.Gain = 1;
-            }
-            if (c.Name == "Look Y (Tilt)")
-            {
-                c.Input.Gain = -1;
+                foreach (Transform children in child)
+                {
+                    if (children.gameObject.name == "FPS_HANDS" || children.gameObject.name == "ROOT" || children.gameObject.name == "SK_Military_Boots3" || children.gameObject.name == "SK_Military_Head1" || children.gameObject.name == "SK_Military_Pants2" || children.gameObject.name == "SK_Military_Shirt3")
+                    {
+                       child.gameObject.SetActive(true);
+                    }
+                    
+                }
             }
         }
     }

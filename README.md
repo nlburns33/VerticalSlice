@@ -18,4 +18,11 @@ Milestone 4 Devlog goes here.
 ## Final Devlog
 Final Devlog goes here.
 ## Open-source assets
-- Cite any external assets used here!
+- [Survivalist Character](https://assetstore.unity.com/packages/3d/characters/survivalist-character-181470) - Player model
+- [RPG Animations](https://assetstore.unity.com/packages/3d/animations/free-32-rpg-animations-215058) - Player animations
+- [Monster: Wolf Boss](https://assetstore.unity.com/packages/3d/characters/creatures/01-monster-wolf-boss-189463) - Monster model and animations
+- [Low-Poly 3D Lockers](https://assetstore.unity.com/packages/3d/props/interior/low-poly-3d-lockers-239681) - Locker model
+- [Ammo](https://assetstore.unity.com/packages/3d/props/ammo-157327) - Ammo box model
+- [First Aid Set](https://assetstore.unity.com/packages/3d/props/first-aid-set-160073) - First aid kit model
+- [Flashlight](https://assetstore.unity.com/packages/3d/props/electronics/flashlight-18972) - Flashlight model
+- [AllSky Free](https://assetstore.unity.com/packages/2d/textures-materials/sky/allsky-free-10-sky-skybox-set-146014) - Skybox

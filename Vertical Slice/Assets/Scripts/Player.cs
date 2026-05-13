@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     CinemachineInputAxisController axisController;
     GameObject cinemachineCamera;
     CinemachineCamera Camera;
+    [SerializeField] Animator handsAnimator;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +32,11 @@ public class Player : MonoBehaviour
         int ammoDifference = 5 - currentAmmo;
         int reloadAmount = Mathf.Min(ammoReserves, ammoDifference);
         Variables.Object(gameObject).Set("ammo", currentAmmo + reloadAmount);
-        Variables.Object(gameObject).Set("ammoReserve", ammoReserves - reloadAmount); 
+        Variables.Object(gameObject).Set("ammoReserve", ammoReserves - reloadAmount);
+        if (reloadAmount > 0)
+        {
+            handsAnimator.SetTrigger("reloading");
+        }
     }
     public void LockCamera()
     {

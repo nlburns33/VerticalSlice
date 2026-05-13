@@ -10,7 +10,20 @@ Breakdown:
 
 
 ## Milestone 2 Devlog
-Milestone 2 Devlog goes here.
+Player weapon animations
+1. Set up the animator controller 
+- Create an animator controller and add the relevant clips
+- Edit the clips to have loop time enabled
+- Create booleans and triggers for different transition actions
+- Create transitions between the clips using the booleans and triggers
+- Ensure the idle animation plays correctly
+
+2. Set up transition functionality in script
+- Make a variable to reference the new animator controller
+- Set the moving boolean to true in the moving sequence if the inputs are zero, then test if it plays and stops
+- Set the firing trigger to true in the firing sequence and sync the firing cooldown to the animation length
+- Set the reloading trigger to true in the separate reloading script and make it only play if the player actually reloaded ammo
+
 ## Milestone 3 Devlog
 Milestone 3 Devlog goes here.
 ## Milestone 4 Devlog

@@ -29,8 +29,10 @@ Breakdown:
 3. I bridged visual scripting and code with the Player script, which has methods that are called in various sequences in the Player graph. I used it to do the math for reloading with the Reload method, which was much simpler to think about and program in script compared to using nodes. I also used the LockCamera and UnLockCamera methods for hiding, especially because the UnLockCamera method required a complicated if statement that would be annoying with nodes.
 
 Reload usage sequence in graph:
+<img width="2428" height="571" alt="Screenshot 2026-05-14 222207" src="https://github.com/user-attachments/assets/6d3745ec-6c7b-47b6-8cb6-adbfaf80f397" />
 
 Lock and Unlock usage sequence in graph:
+<img width="2493" height="589" alt="image" src="https://github.com/user-attachments/assets/305b3f1d-3471-4742-8273-cd7974a5ec2a" />
 
 4. The Unity system I would like graded is the navmesh system, which is used to control the monster's movement.
 ## Milestone 3 Devlog

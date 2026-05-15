@@ -10,20 +10,29 @@ Breakdown:
 
 
 ## Milestone 2 Devlog
-Player weapon animations
-1. Set up the animator controller 
-- Create an animator controller and add the relevant clips
-- Edit the clips to have loop time enabled
-- Create booleans and triggers for different transition actions
-- Create transitions between the clips using the booleans and triggers
-- Ensure the idle animation plays correctly
+1. As I have already implemented the sanity system, I have chosen to break down implementation of the player's weapon animations.
+   1. Set up the animator controller 
+      - Create an animator controller and add the relevant clips
+      - Edit the clips to have loop time enabled
+      - Create booleans and triggers for different transition actions
+      - Create transitions between the clips using the booleans and triggers
+      - Ensure the idle animation plays correctly
 
-2. Set up transition functionality in script
-- Make a variable to reference the new animator controller
-- Set the moving boolean to true in the moving sequence if the inputs are zero, then test if it plays and stops
-- Set the firing trigger to true in the firing sequence and sync the firing cooldown to the animation length
-- Set the reloading trigger to true in the separate reloading script and make it only play if the player actually reloaded ammo
+   2. Set up transition functionality in script
+      - Make a variable to reference the new animator controller
+      - Set the moving boolean to true in the moving sequence if the inputs are zero, then test if it plays and stops
+      - Set the firing trigger to true in the firing sequence and sync the firing cooldown to the animation length
+      - Set the reloading trigger to true in the separate reloading script and make it only play if the player actually reloaded ammo
 
+2. The steps break-down was moderately useful, as it helped me think through the process I would take. However, there were some steps that ended up being more complicated than the steps initially ____. It helped me with the basics, but was not very helpful for the advanced implementation. The week 5 quiz was not useful because by that time I had already full implemented the Unity system.
+
+3. I bridged visual scripting and code with the Player script, which has methods that are called in various sequences in the Player graph. I used it to do the math for reloading with the Reload method, which was much simpler to think about and program in script compared to using nodes. I also used the LockCamera and UnLockCamera methods for hiding, especially because the UnLockCamera method required a complicated if statement that would be annoying with nodes.
+
+Reload usage sequence in graph:
+
+Lock and Unlock usage sequence in graph:
+
+4. The Unity system I would like graded is the navmesh system, which is used to control the monster's movement.
 ## Milestone 3 Devlog
 Milestone 3 Devlog goes here.
 ## Milestone 4 Devlog

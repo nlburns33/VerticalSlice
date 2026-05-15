@@ -18,15 +18,17 @@ Breakdown:
       - Create transitions between the clips using the booleans and triggers
       - Ensure the idle animation plays correctly
 
-   2. Set up transition functionality in script
+   2. Set up the transition functionality in script
       - Make a variable to reference the new animator controller
-      - Set the moving boolean to true in the moving sequence if the inputs are zero, then test if it plays and stops
+      - Set the moving boolean to true in the moving sequence if the inputs are zero, then test if it plays and stops correctly
       - Set the firing trigger to true in the firing sequence and sync the firing cooldown to the animation length
       - Set the reloading trigger to true in the separate reloading script and make it only play if the player actually reloaded ammo
+      - Prevent the player from reloading again and have the UI text update only once the animation is completed 
+      - Tweak transition settings as needed to blend animations properly, testing after each change
 
-2. The steps break-down was moderately useful, as it helped me think through the process I would take. However, there were some steps that ended up being more complicated than the steps initially ____. It helped me with the basics, but was not very helpful for the advanced implementation. The week 5 quiz was not useful because by that time I had already full implemented the Unity system.
+2. The steps break-down was moderately useful, as it helped me think through the process I would take. However, there were some steps that ended up being more complicated than the steps covered, such as needing to significantly restructure the reloading node sequence and the transitions requiring the use of exit time. It helped me with the basics, but was not very helpful for the advanced implementation. The week 5 quiz was not useful because by that time I had already full implemented the Unity system. If I were to do them again, I would try to be a bit more specific and detail the complex parts if I can anticipate them.
 
-3. I bridged visual scripting and code with the Player script, which has methods that are called in various sequences in the Player graph. I used it to do the math for reloading with the Reload method, which was much simpler to think about and program in script compared to using nodes. I also used the LockCamera and UnLockCamera methods for hiding, especially because the UnLockCamera method required a complicated if statement that would be annoying with nodes.
+3. I bridged visual scripting and code with the Player script, which has methods that are called via nodes in various sequences in the Player graph. I used it to do the math for reloading with the Reload method, which was much simpler to think about and program in script compared to using nodes. I also used the LockCamera and UnLockCamera methods for hiding, especially because the UnLockCamera method required a complicated if statement that would be annoying with nodes.
 
 Reload usage sequence in graph:
 <img width="2428" height="571" alt="Screenshot 2026-05-14 222207" src="https://github.com/user-attachments/assets/6d3745ec-6c7b-47b6-8cb6-adbfaf80f397" />
@@ -50,3 +52,11 @@ Final Devlog goes here.
 - [First Aid Set](https://assetstore.unity.com/packages/3d/props/first-aid-set-160073) - First aid kit model
 - [Flashlight](https://assetstore.unity.com/packages/3d/props/electronics/flashlight-18972) - Flashlight model
 - [AllSky Free](https://assetstore.unity.com/packages/2d/textures-materials/sky/allsky-free-10-sky-skybox-set-146014) - Skybox
+- [Street Lamps](https://assetstore.unity.com/packages/3d/props/exterior/street-lamps-165658) - Street lamp model
+- [Strange Whispers](https://pixabay.com/sound-effects/horror-strange-whispers-415245/) - Low sanity whisper sounds
+- [Footsteps - Essentials](https://assetstore.unity.com/packages/audio/sound-fx/foley/footsteps-essentials-189879) - Footstep sounds
+- [FPS Pistol Animations](https://sketchfab.com/3d-models/fps-pistol-animations-0d7a343dcb6f401197a73c91aee93f6d) - Gun/arms models and animations
+- [Weapons of Choice - FREE](https://assetstore.unity.com/packages/audio/sound-fx/weapons/weapons-of-choice-free-101807) - Gunshot sound
+- [Monster Bite](https://pixabay.com/sound-effects/horror-monster-bite-44538/) - Monster attack sound
+- [Monster Growl](https://pixabay.com/sound-effects/horror-monster-growl-390285/) - Monster growl sound
+- [Item Pickup](https://pixabay.com/sound-effects/film-special-effects-item-pickup-37089/) - Item pickup sound

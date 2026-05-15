@@ -10,7 +10,7 @@ Breakdown:
 
 
 ## Milestone 2 Devlog
-1. As I have already implemented the sanity system, I have chosen to break down implementation of the player's weapon animations.
+1. As I have already implemented the sanity system, I have chosen to break down the implementation of the player's weapon animations.
    1. Set up the animator controller 
       - Create an animator controller and add the relevant clips
       - Edit the clips to have loop time enabled

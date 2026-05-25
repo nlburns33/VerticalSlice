@@ -10,6 +10,7 @@ TagManager:
   - Ammo
   - Locker
   - Lamp
+  - Exit
   layers:
   - Default
   - TransparentFX

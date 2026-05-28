@@ -44,6 +44,7 @@ Lock and Unlock usage sequence in graph:
 - Made the goal clear by having the world and ___ guide players ___
 - Improved the movement, fixing collisions between the player and colliders
 - Made it so the player can no longer jump, fixing various movement issues while not detracting from gameplay
+- More consumables and lockers exist so that players ____
 ## Milestone 4 Devlog
 Milestone 4 Devlog goes here.
 ## Final Devlog

@@ -42,6 +42,8 @@ Lock and Unlock usage sequence in graph:
 
 - Improved outer boundaries to make it so players can't escape
 - Made the goal clear by having the world and ___ guide players ___
+- Improved the movement, fixing collisions between the player and colliders
+- Made it so the player can no longer jump, fixing various movement issues while not detracting from gameplay
 ## Milestone 4 Devlog
 Milestone 4 Devlog goes here.
 ## Final Devlog

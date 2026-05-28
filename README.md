@@ -38,7 +38,10 @@ Lock and Unlock usage sequence in graph:
 
 4. The Unity system I would like graded is the navmesh system, which is used to control the monster's movement.
 ## Milestone 3 Devlog
-Milestone 3 Devlog goes here.
+
+
+- Improved outer boundaries to make it so players can't escape
+- Made the goal clear by having the world and ___ guide players ___
 ## Milestone 4 Devlog
 Milestone 4 Devlog goes here.
 ## Final Devlog

@@ -45,6 +45,7 @@ Lock and Unlock usage sequence in graph:
 - Improved the movement, fixing collisions between the player and colliders
 - Made it so the player can no longer jump, fixing various movement issues while not detracting from gameplay
 - More consumables and lockers exist so that players ____
+- Added a muzzle flash to make firing feel more complete
 ## Milestone 4 Devlog
 Milestone 4 Devlog goes here.
 ## Final Devlog

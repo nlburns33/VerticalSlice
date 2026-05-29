@@ -38,18 +38,19 @@ Lock and Unlock usage sequence in graph:
 
 4. The Unity system I would like graded is the navmesh system, which is used to control the monster's movement.
 ## Milestone 3 Devlog
-1. The ShaderGraph I made is used to display the bloody vignette effect on the screen when the player is hurt. The SampleTexture2D node gets the bloody vignette texture, the outputs of which are put into two other nodes. 
+1. The Shader Graph I made is used to display the bloody vignette effect on the screen when the player is hurt. The SampleTexture2D node gets the bloody vignette texture, the outputs of which are put into two other nodes. 
 The alpha channel of the texture is multiplied by a sequence of nodes that makes the image fade in and out using a sine time node that is modified to be more consistent through adding and dividing. The result is then multiplied again, this time by a float that is controlled in the Player ScriptGraph. 
 As the player's health decreases, this float gets higher and higher, increasing the resulting alpha and making the image more opaque.
 The red, green, and blue channels of the texture are input into a combine node, gathering the channels into one output, which is then input into the base color of the fragment shader. This simply sets the effect's color.
+<img width="1940" height="1131" alt="Screenshot 2026-05-28 221416" src="https://github.com/user-attachments/assets/6d0a8871-a558-46d4-b1d4-839f56fc6354" />
 
-2. I have made a fair few changes based on playtesting feedback, especially around movement. I significantly improved the movement system, fixing the player being able to move into and through colliders in unintended ways that playtesters noticed. 
+3. I have made a fair few changes based on playtesting feedback, especially around movement. I significantly improved the movement system, fixing the player being able to move into and through colliders in unintended ways that playtesters noticed. 
 With the new system, I removed the player's ability to jump, which added nothing to gameplay but was a source of various other collision issues. I changed the map's barriers, which when combined with the other changes stops players from being able to get over them and out of bounds. 
 I made the monster easier to spot with a more significant light, as some players noted that it was difficult to see with the fog and darkness. I also made the monster more aggressive so that there a greater challenge. 
 I added additional lockers and consumables, as players said there were too few which meant the player couldn't interact as much.
 I made the map layout subtly guide the player towards the goal (the truck) while still having offshoots, as some players were unsure of where to go.
 
-3. The majority of the content I added since the last milestone has been based around completely redoing the environment so the gameplay loop can be repeatedly experienced in more than just a testing space. 
+4. The majority of the content I added since the last milestone has been based around completely redoing the environment so the gameplay loop can be repeatedly experienced in more than just a testing space. 
 I expanded the map alongside adding many new props and environmental assets to allow for more interesting opportunities for chases and hiding encounters. 
 I also implemented a win condition, having the player escape the area by fleeing in a truck they interact with. This caps off the gameplay loop.
 The premise of my game is meant to have only a single enemy that the player has to hide and run from but who can only be stunned and not killed, so it didn't make sense to add more enemies for feature 3. 

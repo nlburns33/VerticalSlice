@@ -38,16 +38,32 @@ Lock and Unlock usage sequence in graph:
 
 4. The Unity system I would like graded is the navmesh system, which is used to control the monster's movement.
 ## Milestone 3 Devlog
+1. The ShaderGraph I made is used to display the bloody vignette effect on the screen when the player is hurt. The SampleTexture2D node gets the bloody vignette texture, the outputs of which are put into two other nodes. 
+The alpha channel of the texture is multiplied by a sequence of nodes that makes the image fade in and out using a sine time node that is modified to be more consistent through adding and dividing. The result is then multiplied again, this time by a float that is controlled in the Player ScriptGraph. 
+As the player's health decreases, this float gets higher and higher, increasing the resulting alpha and making the image more opaque.
+The red, green, and blue channels of the texture are input into a combine node, gathering the channels into one output, which is then input into the base color of the fragment shader. This simply sets the effect's color.
 
+2. I have made a fair few changes based on playtesting feedback, especially around movement. I significantly improved the movement system, fixing the player being able to move into and through colliders in unintended ways that playtesters noticed. 
+With the new system, I removed the player's ability to jump, which added nothing to gameplay but was a source of various other collision issues. I changed the map's barriers, which when combined with the other changes stops players from being able to get over them and out of bounds. 
+I made the monster easier to spot with a more significant light, as some players noted that it was difficult to see with the fog and darkness. I also made the monster more aggressive so that there a greater challenge. 
+I added additional lockers and consumables, as players said there were too few which meant the player couldn't interact as much.
+I made the map layout subtly guide the player towards the goal (the truck) while still having offshoots, as some players were unsure of where to go.
+
+3. The majority of the content I added since the last milestone has been based around completely redoing the environment so the gameplay loop can be repeatedly experienced in more than just a testing space. 
+I expanded the map alongside adding many new props and environmental assets to allow for more interesting opportunities for chases and hiding encounters. 
+I also implemented a win condition, having the player escape the area by fleeing in a truck they interact with. This caps off the gameplay loop.
+The premise of my game is meant to have only a single enemy that the player has to hide and run from but who can only be stunned and not killed, so it didn't make sense to add more enemies for feature 3. 
+The features I have added are most of what remained to be completed from my pitch, and there aren't many things I could add to gameplay without requiring new systems. 
+Thus, it made the most sense to add this kind of content as it lets the player experience the entirety of the gameplay while making it more interesting. 
 
 - Improved outer boundaries to make it so players can't escape
 - Made the goal clear by having the world and ___ guide players ___
-- Improved the movement, fixing collisions between the player and colliders
-- Made it so the player can no longer jump, fixing various movement issues while not detracting from gameplay
+- Significantly improved the movement with a new system, fixing collisions between the player and colliders
+- Made it so the player can no longer jump, fixing various movement issues while not detracting from gameplay, as jumping is not needed for any gameplay mechanics.
 - More consumables and lockers exist so that players ____
 - Added a muzzle flash to make firing feel more complete
-## Milestone 4 Devlog
-Milestone 4 Devlog goes here.
+- Made the enemy easier to spit with a more significant light and made it more aggressive so it poses more f a threat
+
 ## Final Devlog
 Final Devlog goes here.
 ## Open-source assets
@@ -67,3 +83,16 @@ Final Devlog goes here.
 - [Monster Bite](https://pixabay.com/sound-effects/horror-monster-bite-44538/) - Monster attack sound
 - [Monster Growl](https://pixabay.com/sound-effects/horror-monster-growl-390285/) - Monster growl sound
 - [Item Pickup](https://pixabay.com/sound-effects/film-special-effects-item-pickup-37089/) - Item pickup sound
+- [Yughues Free Ground Materials](https://assetstore.unity.com/packages/2d/textures-materials/nature/yughues-free-ground-materials-13001) - Ground textures
+- [Old sheds](https://assetstore.unity.com/packages/3d/props/exterior/old-sheds-304824) - Metal shed model
+- [URP Tree Models](https://assetstore.unity.com/packages/3d/vegetation/trees/urp-tree-models-253340) - Tree models
+- [Wood Box Pack](https://assetstore.unity.com/packages/3d/props/industrial/wood-box-pack-15-objects-105811) - Wooden props
+- [Industrial Models](https://assetstore.unity.com/packages/3d/props/industrial/industrial-models-171071) - Pipes, fuel tank, and pallet models
+- [Urban Building](https://assetstore.unity.com/packages/3d/props/exterior/urban-building-130318) - Central building model
+- [Industrial Buildings & Props](https://assetstore.unity.com/packages/3d/environments/industrial/industrial-buildings-props-13173) - Large building, small stone building, and garage models
+- [PBR Dirt Dumpster](https://assetstore.unity.com/packages/3d/props/exterior/pbr-dirty-dumpster-59840) - Dumpster model
+- [PBR RPG/FPS Game Assets](https://assetstore.unity.com/packages/3d/environments/industrial/pbr-rpg-fps-game-assets-industrial-set-v1-0-146519) - Shipping containers and fuel tank models
+- [Yughues Free Bushes](https://assetstore.unity.com/packages/3d/vegetation/plants/yughues-free-bushes-13168) - Bush models
+- [Pickup Truck](https://sketchfab.com/3d-models/pickup-truck-047615f53e2d45b9a1a2a4dd203d459c) - Pickup truck model
+- [Blood Vignette](https://www.deviantart.com/7he1ndigo/art/Blood-Vignette-704205045) - Bloody effect texture
+- [Free Quick Effects](https://assetstore.unity.com/packages/vfx/particles/free-quick-effects-vol-1-304424) - Muzzle flash effect

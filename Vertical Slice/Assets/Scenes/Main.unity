@@ -5480,6 +5480,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3261585399519066648, guid: 82a76256a42024049964a0c8b9bb380f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261585399519066648, guid: 82a76256a42024049964a0c8b9bb380f,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 5.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261585399519066648, guid: 82a76256a42024049964a0c8b9bb380f,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 1.44
+      objectReference: {fileID: 0}
     - target: {fileID: 5787098976114755534, guid: 82a76256a42024049964a0c8b9bb380f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6642,13 +6657,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8193924707802336935, guid: 2b23fd819e8890e4bae6782feabf3193,
         type: 3}
+      propertyPath: m_Intensity
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8193924707802336935, guid: 2b23fd819e8890e4bae6782feabf3193,
+        type: 3}
       propertyPath: m_SpotAngle
-      value: 85.692276
+      value: 113.18097
       objectReference: {fileID: 0}
     - target: {fileID: 8193924707802336935, guid: 2b23fd819e8890e4bae6782feabf3193,
         type: 3}
       propertyPath: m_InnerSpotAngle
-      value: 28.064194
+      value: 55.552902
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7402,10 +7422,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3261585399519066648, guid: 82a76256a42024049964a0c8b9bb380f,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261585399519066648, guid: 82a76256a42024049964a0c8b9bb380f,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 3261585399519066648, guid: 82a76256a42024049964a0c8b9bb380f,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 1.6
+      objectReference: {fileID: 0}
     - target: {fileID: 5787098976114755534, guid: 82a76256a42024049964a0c8b9bb380f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.051
+      value: 18.591
       objectReference: {fileID: 0}
     - target: {fileID: 5787098976114755534, guid: 82a76256a42024049964a0c8b9bb380f,
         type: 3}
@@ -7415,27 +7450,27 @@ PrefabInstance:
     - target: {fileID: 5787098976114755534, guid: 82a76256a42024049964a0c8b9bb380f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 23.102
+      value: 24.312
       objectReference: {fileID: 0}
     - target: {fileID: 5787098976114755534, guid: 82a76256a42024049964a0c8b9bb380f,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.62879324
+      value: -0.5371394
       objectReference: {fileID: 0}
     - target: {fileID: 5787098976114755534, guid: 82a76256a42024049964a0c8b9bb380f,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.095096014
+      value: 0.081234686
       objectReference: {fileID: 0}
     - target: {fileID: 5787098976114755534, guid: 82a76256a42024049964a0c8b9bb380f,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7630585
+      value: 0.83013284
       objectReference: {fileID: 0}
     - target: {fileID: 5787098976114755534, guid: 82a76256a42024049964a0c8b9bb380f,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.11540172
+      value: 0.12554577
       objectReference: {fileID: 0}
     - target: {fileID: 5787098976114755534, guid: 82a76256a42024049964a0c8b9bb380f,
         type: 3}
@@ -7445,7 +7480,7 @@ PrefabInstance:
     - target: {fileID: 5787098976114755534, guid: 82a76256a42024049964a0c8b9bb380f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 258.98
+      value: 245.81
       objectReference: {fileID: 0}
     - target: {fileID: 5787098976114755534, guid: 82a76256a42024049964a0c8b9bb380f,
         type: 3}
@@ -8117,7 +8152,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4421065742045886, guid: 5ac421d7e8cea0447b1108e7955c0ed6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 4421065742045886, guid: 5ac421d7e8cea0447b1108e7955c0ed6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8125,7 +8160,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4421065742045886, guid: 5ac421d7e8cea0447b1108e7955c0ed6, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.36
       objectReference: {fileID: 0}
     - target: {fileID: 4421065742045886, guid: 5ac421d7e8cea0447b1108e7955c0ed6, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8573,8 +8608,8 @@ PrefabInstance:
       value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"interactDistance","value":{"$content":5,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"player","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"baseSpeed","value":{"$content":1.5,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"sightDistance","value":{"$content":30,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"hearDistance","value":{"$content":7,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"sightDistance","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"hearDistance","value":{"$content":10,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"runSpeed","value":{"$content":4.5,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"baseRotateSpeed","value":{"$content":40.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"chaseRotateSpeed","value":{"$content":120.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
@@ -13503,7 +13538,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"speed","value":{"$content":5.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"speed","value":{"$content":4.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"isGrounded","value":{"$content":true,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"animator","value":{"$content":0,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
       UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"handsAnimator","value":{"$content":1,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
@@ -14940,7 +14975,7 @@ PrefabInstance:
     - target: {fileID: 6157515007809189668, guid: 8a271fde7aad44b5a8ec8025c447c359,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.625
+      value: 18.075
       objectReference: {fileID: 0}
     - target: {fileID: 6157515007809189668, guid: 8a271fde7aad44b5a8ec8025c447c359,
         type: 3}
@@ -14950,7 +14985,7 @@ PrefabInstance:
     - target: {fileID: 6157515007809189668, guid: 8a271fde7aad44b5a8ec8025c447c359,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 23.858
+      value: 25.075
       objectReference: {fileID: 0}
     - target: {fileID: 6157515007809189668, guid: 8a271fde7aad44b5a8ec8025c447c359,
         type: 3}

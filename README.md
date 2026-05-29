@@ -41,7 +41,7 @@ Lock and Unlock usage sequence in graph:
 1. The Shader Graph I made is used to display the bloody vignette effect on the screen when the player is hurt. The SampleTexture2D node gets the bloody vignette texture, the outputs of which are put into two other nodes. 
 The alpha channel of the texture is multiplied by a sequence of nodes that makes the image fade in and out using a sine time node that is modified to be more consistent through adding and dividing. The result is then multiplied again, this time by a float that is controlled in the Player ScriptGraph. 
 As the player's health decreases, this float gets higher and higher, increasing the resulting alpha and making the image more opaque.
-The red, green, and blue channels of the texture are input into a combine node, gathering the channels into one output, which is then input into the base color of the fragment shader. This simply sets the effect's color.
+The red, green, and blue channels of the texture are input into a combine node, gathering the channels into one output, which is then input into the base color of the fragment shader. This simply sets the effect's color, which doesn't change.
 <img width="1940" height="1131" alt="Screenshot 2026-05-28 221416" src="https://github.com/user-attachments/assets/6d0a8871-a558-46d4-b1d4-839f56fc6354" />
 
 3. I have made a fair few changes based on playtesting feedback, especially around movement. I significantly improved the movement system, fixing the player being able to move into and through colliders in unintended ways that playtesters noticed. 

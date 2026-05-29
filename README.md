@@ -56,14 +56,6 @@ The premise of my game is meant to have only a single enemy that the player has 
 The features I have added are most of what remained to be completed from my pitch, and there aren't many things I could add to gameplay without requiring new systems. 
 Thus, it made the most sense to add this kind of content as it lets the player experience the entirety of the gameplay while making it more interesting. 
 
-- Improved outer boundaries to make it so players can't escape
-- Made the goal clear by having the world and ___ guide players ___
-- Significantly improved the movement with a new system, fixing collisions between the player and colliders
-- Made it so the player can no longer jump, fixing various movement issues while not detracting from gameplay, as jumping is not needed for any gameplay mechanics.
-- More consumables and lockers exist so that players ____
-- Added a muzzle flash to make firing feel more complete
-- Made the enemy easier to spit with a more significant light and made it more aggressive so it poses more f a threat
-
 ## Final Devlog
 Final Devlog goes here.
 ## Open-source assets

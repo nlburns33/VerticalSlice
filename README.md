@@ -37,6 +37,7 @@ Lock and Unlock usage sequence in graph:
 <img width="2493" height="589" alt="image" src="https://github.com/user-attachments/assets/305b3f1d-3471-4742-8273-cd7974a5ec2a" />
 
 4. The Unity system I would like graded is the navmesh system, which is used to control the monster's movement.
+
 ## Milestone 3 Devlog
 1. The Shader Graph I made is used to display the bloody vignette effect on the screen when the player is hurt. The SampleTexture2D node gets the bloody vignette texture, the outputs of which are put into two other nodes. 
 The alpha channel of the texture is multiplied by a sequence of nodes that makes the image fade in and out using a sine time node that is modified to be more consistent through adding and dividing. The result is then multiplied again, this time by a float that is controlled in the Player Script Graph. As the player's health decreases, this float gets higher and higher, increasing the resulting alpha and making the image more opaque. The final number is input into the alpha of the fragment shader.
@@ -57,7 +58,25 @@ The features I have added are most of what remained to be completed from my pitc
 Thus, it made the most sense to add this kind of content as it lets the player experience the entirety of the gameplay while making it more interesting. 
 
 ## Final Devlog
-Final Devlog goes here.
+1. The player tries to escape the maze-like environment while avoiding the monster using lockers and their pistol, staying alive by collecting health and ammo and ____ sanity. 
+The
+This is the core gameplay that would be present across the full game, so a player only needs to experience this short vertical slice in order to get a feel for how the rest of the game would play out.
+
+2. The bloody vignette effect is activated through the Player Script Graph. In the Shader Graph, there is a float node that gets multiplied by the alpha channel. 
+The Player Script Graph gets the player's health, then divides it by 100 and subtracts it from 1 to create a higher float as the player's health decreases. The material used in the effect is then referenced, and the float variable is set to the result of that math. 
+This makes the effect invisible when the player is at full health and slowly increase in opacity as the player's health increases.
+
+3. The first primary step would be to identify a core game mechanic or loop and focus on that, slowly adding more mechanics as needed to make it work. Then, I would identify the different primary systems that could be used to utilize the mechanics and create the overall gameplay experience. 
+Next, I would identify variables and components to support the mechanical function. These could all be simply noted down and organized in a document. 
+Once the primary parts of the game are envisioned, then I could visualize them with a diagram of all the parts and their relationships or a systems diagram with the game loops.  
+Bubble diagrams would work well to reveal many of the connections necessary to integrate the various systems and parts together. Task step break-downs could help later on when preparing to implement a feature, but seem less useful early on in planning. 
+Planning allows you to better visualize the scope of a project, making it easier to see if it is too large to be tackled realistically.
+However, if planned poorly (if the plan is too simple), it could also make the project seem easier than it actually is. If you have a good plan, then more can be added later on if needed easier than otherwise.
+This plan is, in a way, more detailed in terms of specifics than what I did for my vertical slice project. I ended up having to change a few aspects from the original plan, but I think this is a universal problem that c_________________.
+Having an outline of individual features, in the pitch and in a trello board, was useful as a wa to keep track of progress and _________. 
+
+
+
 ## Open-source assets
 - [Survivalist Character](https://assetstore.unity.com/packages/3d/characters/survivalist-character-181470) - Player model
 - [RPG Animations](https://assetstore.unity.com/packages/3d/animations/free-32-rpg-animations-215058) - Player animations
@@ -88,3 +107,4 @@ Final Devlog goes here.
 - [Pickup Truck](https://sketchfab.com/3d-models/pickup-truck-047615f53e2d45b9a1a2a4dd203d459c) - Pickup truck model
 - [Blood Vignette](https://www.deviantart.com/7he1ndigo/art/Blood-Vignette-704205045) - Bloody effect texture
 - [Free Quick Effects](https://assetstore.unity.com/packages/vfx/particles/free-quick-effects-vol-1-304424) - Muzzle flash effect
+- [Horror Background Atmosphere 025](https://pixabay.com/sound-effects/musical-horror-background-atmosphere-025-499631/) - Background ambience

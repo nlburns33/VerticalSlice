@@ -70,7 +70,7 @@ This makes the effect invisible when the player is at full health and slowly inc
 3. While my current plan worked alright, I think that I could form a better plan. 
 The first primary step would be to identify a core game mechanic or loop and focus on that, slowly adding more mechanics as needed to make it work. Then, I would identify the different primary systems that could be used to utilize the mechanics and create the overall gameplay experience. 
 Next, I would identify variables and components to support the function of the mechanics. These could all be simply noted down and organized in a document. 
-Once the primary parts of the game are envisioned, I could visualize them with a diagram of all the parts and their relationships or a systems diagram with the game loops.  
+Once the primary parts of the game are envisioned, I could visualize them with a diagram of all the parts and their relationships or a systems diagram with the game loops. 
 Bubble diagrams would work well to reveal many of the connections necessary to integrate the various systems and parts together. Having them contain the rough scripting functions of each part would help when implementing them later on.
 Task step break-downs could help later on when preparing to implement a feature, but seem less useful early on in planning. 
 This plan is, in a way, more detailed in terms of specifics than what I followed for my vertical slice project, but not that far off. I ended up having to change a few aspects from the original plan for the vertical slice, but I think this is a universal problem that can't be fully solved with a different plan.

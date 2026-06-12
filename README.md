@@ -58,24 +58,26 @@ The features I have added are most of what remained to be completed from my pitc
 Thus, it made the most sense to add this kind of content as it lets the player experience the entirety of the gameplay while making it more interesting. 
 
 ## Final Devlog
-1. The player tries to escape the maze-like environment while avoiding the monster using lockers and their pistol, staying alive by collecting health and ammo and ____ sanity. 
-The
-This is the core gameplay that would be present across the full game, so a player only needs to experience this short vertical slice in order to get a feel for how the rest of the game would play out.
+1. The player tries to escape the maze-like environment while avoiding the monster using lockers and their pistol, staying alive by collecting health and ammo and maintaining their sanity. There is a monster that wanders, chases, and attacks the player, a weapon that can be used to stun the monster, 
+and a complete environment with scattered lockers to hide in, lights to regain sanity, and health and ammo packs. There is also a win and loss condition, various visual effects, and sounds.
+This vertical slice level contains the primary gameplay mechanics that would be present across the full game, so a player only needs to experience this short vertical slice in order to get a feel for how the rest of the game would play out. 
+There would likely be additional weapons, monsters, maps, and smaller mechanics, but they would be similar enough that the full game could be extrapolated from what currently exists. Many new elements would be based on the existing elements and have a similar core feeling to the player. 
 
-2. The bloody vignette effect is activated through the Player Script Graph. In the Shader Graph, there is a float node that gets multiplied by the alpha channel. 
-The Player Script Graph gets the player's health, then divides it by 100 and subtracts it from 1 to create a higher float as the player's health decreases. The material used in the effect is then referenced, and the float variable is set to the result of that math. 
-This makes the effect invisible when the player is at full health and slowly increase in opacity as the player's health increases.
+2. The bloody vignette rendering effect is activated through the Player Script Graph. In the Shader Graph, there is a float property and node that gets multiplied by the alpha channel. 
+On update, the Player Script Graph gets the player's health, then divides this value by 100 and subtracts the result from 1 to create a higher float as the player's health decreases. The effect's material is then referenced to access the float property from the Shader Graph, and the float is set to the result of previous math. 
+This makes the effect invisible when the player is at full health and slowly increases in opacity as the player's health decreases, creating a seamless transition.
 
-3. The first primary step would be to identify a core game mechanic or loop and focus on that, slowly adding more mechanics as needed to make it work. Then, I would identify the different primary systems that could be used to utilize the mechanics and create the overall gameplay experience. 
-Next, I would identify variables and components to support the mechanical function. These could all be simply noted down and organized in a document. 
-Once the primary parts of the game are envisioned, then I could visualize them with a diagram of all the parts and their relationships or a systems diagram with the game loops.  
-Bubble diagrams would work well to reveal many of the connections necessary to integrate the various systems and parts together. Task step break-downs could help later on when preparing to implement a feature, but seem less useful early on in planning. 
-Planning allows you to better visualize the scope of a project, making it easier to see if it is too large to be tackled realistically.
-However, if planned poorly (if the plan is too simple), it could also make the project seem easier than it actually is. If you have a good plan, then more can be added later on if needed easier than otherwise.
-This plan is, in a way, more detailed in terms of specifics than what I did for my vertical slice project. I ended up having to change a few aspects from the original plan, but I think this is a universal problem that c_________________.
-Having an outline of individual features, in the pitch and in a trello board, was useful as a wa to keep track of progress and _________. 
-
-
+3. While my current plan worked alright, I think that I could form a better plan. 
+The first primary step would be to identify a core game mechanic or loop and focus on that, slowly adding more mechanics as needed to make it work. Then, I would identify the different primary systems that could be used to utilize the mechanics and create the overall gameplay experience. 
+Next, I would identify variables and components to support the function of the mechanics. These could all be simply noted down and organized in a document. 
+Once the primary parts of the game are envisioned, I could visualize them with a diagram of all the parts and their relationships or a systems diagram with the game loops.  
+Bubble diagrams would work well to reveal many of the connections necessary to integrate the various systems and parts together. Having them contain the rough scripting functions of each part would help when implementing them later on.
+Task step break-downs could help later on when preparing to implement a feature, but seem less useful early on in planning. 
+This plan is, in a way, more detailed in terms of specifics than what I followed for my vertical slice project, but not that far off. I ended up having to change a few aspects from the original plan for the vertical slice, but I think this is a universal problem that can't be fully solved with a different plan.
+It was difficult to figure out where all the scripting functionality would go, so I likely could have benefited from the more in-depth bubble diagrams with scripting details in my new plan.
+Having an outline of individual features, in the pitch and in a Trello board, was useful as a way to keep track of progress and get a rough idea of what order to tackle systems in. 
+Planning a big project in small steps like this allows you to better visualize the scope of a project, making it easier to see if it is too large to be tackled realistically.
+However, if planned poorly (if the plan is too simple), it could also make the project seem easier than it actually is. If you have a good plan, then more can be added later on if needed, more easily than otherwise.
 
 ## Open-source assets
 - [Survivalist Character](https://assetstore.unity.com/packages/3d/characters/survivalist-character-181470) - Player model

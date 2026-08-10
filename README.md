@@ -154,7 +154,7 @@ bAdjustableScopeZoom = 0
 bAgilityScalesJumpHeight = 0
 
 ; NPC and player movement speed is scaled by their agility
-bAgilityScalesMovementSpeed = 0
+bAgilityScalesMovementSpeed = 1
 
 ; remove the movement penalty while aiming
 bAimingSpeed = 0
@@ -223,7 +223,7 @@ bAnimDebugging = 0
 bArmorCausesSinking = 0
 
 ; add an armor condition label to the HUD
-bArmorConditionLabel = 0
+bArmorConditionLabel = 1
 
 ; prevent blood decals for attacks that don't penetrate target DT
 bArmorPreventsBloodDecals = 1
@@ -253,7 +253,7 @@ bBarterAffectsRepairCosts = 0
 bBarterCheckActorBuySellFlags = 0
 
 ; show the total price of the selected quantity menu items when bartering
-bBarterQuantityMenuShowsPrice = 0
+bBarterQuantityMenuShowsPrice = 1
 
 ; show the final caps after a transaction beside player/merchant caps
 bBarterShowCapsChange = 1
@@ -265,7 +265,7 @@ bBetterAutoWalk = 1
 bBetterFlycam = 1
 
 ; zoom in where the cursor is instead of the center of the map
-bBetterMapZoom = 0
+bBetterMapZoom = 1
 
 ; show the value and weight for a whole stack of items while looting and indicate the weight in red if it would overencumber you
 bBetterPickupPrompt = 1
@@ -319,16 +319,16 @@ bClickingShowsTerminalText = 1
 bClickToExitLoadScreens = 0
 
 ; prevents firing if you don't have enough ammo for one burst
-bClipSizeMatters = 0
+bClipSizeMatters = 1
 
 ; colors various HUD elements e.g. HP bar when health is low
-bColoredHUDBars = 0
+bColoredHUDBars = 1
 
 ; show map markers added this session in red
 bColorRecentlyAddedMapMarkers = 1
 
 ; allow coloring the weapon low condition label
-bColorWeaponCndLabel = 0
+bColorWeaponCndLabel = 1
 
 ; customize the color of companions on the compass, see [Companion HUD Color]
 bCompanionPipColorChange = 0
@@ -340,19 +340,19 @@ bCompanionsDontUseAmmo = 0
 bCompanionsUseLocationFontOnMap = 0
 
 ; show - and + on armor DT and DR relative to the equipped armors
-bCompareArmorStats = 0
+bCompareArmorStats = 1
 
 ; show - and + on weapon DPS/DAM relative to the equipped weapon
-bCompareWeaponStats = 0
+bCompareWeaponStats = 1
 
 ; fade icons for NPCs, doors etc. on the left side of the compass
 bCompassFadeLeftSide = 0
 
 ; fade the compass location markers based on distance to the player
-bCompassLocationDistanceBasedAlpha = 0
+bCompassLocationDistanceBasedAlpha = 1
 
 ; fade the compass NPC markers based on distance to the player
-bCompassNPCDistanceBasedAlpha = 0
+bCompassNPCDistanceBasedAlpha = 1
 
 ; use custom icons to show whether an NPC is above or below the player
 bCompassNPCHeightIndicator = 0
@@ -388,7 +388,7 @@ bContainerEncumbranceIndicator = 0
 bContainerMenuStoreAllHotkey = 0
 
 ; show the total weight of the selected quantity menu items in containers
-bContainerQuantityMenuShowsWeight = 0
+bContainerQuantityMenuShowsWeight = 1
 
 ; add a warning in the subtitles bar if the opened container is set to respawn
 bContainerRespawnsMessage = 0
@@ -409,13 +409,13 @@ bControllerBackButtonDoesntClosePipBoy = 0
 bControllerTriggerDeadzones = 0
 
 ; holding the attack button for grenades decreases their detonation timer
-bCookableGrenades = 0
+bCookableGrenades = 1
 
 ; decrease jump height if legs are crippled
 bCrippledLegsScaleJumpHeight = 0
 
 ; play pain sounds when falling with crippled legs
-bCrippledLimbsPlayPainSoundWhenFalling = 0
+bCrippledLimbsPlayPainSoundWhenFalling = 1
 
 ; prevent NPCs dropping their weapons when arms are crippled
 bCripplingDoesntDisarm = 0
@@ -424,7 +424,7 @@ bCripplingDoesntDisarm = 0
 bCritChanceIgnoresFireRate = 0
 
 ; include the limb name in critical hit messages
-bCriticalHitMessagesIncludeLimbName = 0
+bCriticalHitMessagesIncludeLimbName = 1
 
 ; allows crouching while (un)equipping weapons
 bCrouchWhileEquippingWeapons = 1
@@ -481,7 +481,7 @@ bDetectedByWhom = 0
 bDialogueKeepVoiceActingNotes = 0
 
 ; scale NPC-NPC damage independent of the fDiffMultHPByPC gamesetting
-bDifficultyDoesntAffectNPCToNPCDamage = 0
+bDifficultyDoesntAffectNPCToNPCDamage = 1
 
 ; disable steam/gog achievements
 bDisableAchievements = 0
@@ -613,7 +613,7 @@ bEnteringVATSDoesntUnholsterWeapon = 0
 bEquipBrokenItems = 0
 
 ; show explosive destructibles on the grenade indicator
-bExplodingDestructibleIndicator = 0
+bExplodingDestructibleIndicator = 1
 
 ; push targets away from explosions instead of the actor who created them
 bExplosionKnockbackDirectionFix = 1
@@ -646,10 +646,10 @@ bFasterHackingTransition = 1
 bFasterSaveMenuClose = 1
 
 ; increase the hour countdown speed while waiting or sleeping
-bFasterSleepWait = 0
+bFasterSleepWait = 1
 
 ; remove the wait for the Fallout New Vegas logo to be at full alpha
-bFasterTitleMenu = 0
+bFasterTitleMenu = 1
 
 ; makes fast travel cost 1 Nuka-Cola Quantum, Quartz or Victory
 bFastTravelCostsSpecialNukaBottles = 0
@@ -796,7 +796,7 @@ bHipFireAnimsWhileScoped = 0
 bHittingWeaponsDoesntDamageThem = 0
 
 ; allow hold/releasing for throwables similar to grenades
-bHoldAndReleaseThrowables = 0
+bHoldAndReleaseThrowables = 1
 
 ; makes sneaking holdable rather than toggleable
 bHoldCrouchToSneak = 0
@@ -835,10 +835,10 @@ bHUDWeaponNameLabel = 0
 bIgnoreCompanionsVATS = 0
 
 ; use incremental save slots for autosave, optionally fullsaving every rotation
-bImprovedAutoSave = 0
+bImprovedAutoSave = 1
 
 ; improves various aspects of the Hacking mini-game
-bImprovedHacking = 0
+bImprovedHacking = 1
 
 ; allow panning the camera with right click or Y on controller and increase min zoom
 bImprovedRaceMenu = 1
@@ -853,7 +853,7 @@ bIndividialItemStats = 0
 bInstantContinueButton = 1
 
 ; use a separate icon for local map doors which lead to an exterior
-bInteriorExteriorMapDoorIcon = 0
+bInteriorExteriorMapDoorIcon = 1
 
 ; invert the camera X
 bInvertCameraX = 0
@@ -928,7 +928,7 @@ bLevelDifferenceAffectsCombatXP = 0
 bLevelUpScrollWheelSupport = 1
 
 ; give companions light step if player has the perk
-bLightStepAffectsCompanions = 0
+bLightStepAffectsCompanions = 1
 
 ; show damage resistance when using the living anatomy perk, remove decimal places and hide DR/DT if they're zero
 bLivingAnatomyShowDR = 1
@@ -937,7 +937,7 @@ bLivingAnatomyShowDR = 1
 bLocalMapRespawnedCellIndicator = 0
 
 ; make melee and unarmed damage use body part damage multipliers
-bLocationalMeleeDamage = 0
+bLocationalMeleeDamage = 1
 
 ; display the location discovered text as a corner message
 bLocationDiscoveredCornerMessage = 0
@@ -955,7 +955,7 @@ bLockpickHackingMessageShowsCurrentSkill = 0
 bLockPickMenuKeyboardMovement = 0
 
 ; don't reset the bobby pin angle when it breaks
-bLockpickRememberBobbyPinAngle = 0
+bLockpickRememberBobbyPinAngle = 1
 
 ; allows unconscious actors to be looted
 bLootUnconsciousVictims = 0
@@ -970,10 +970,10 @@ bMainMenuContinueIcon = 1
 bManualReload = 0
 
 ; show the distance or time to the hovered location marker in the Map Menu
-bMapLocationDisplayDistance = 0
+bMapLocationDisplayDistance = 1
 
 ; show the faction name underneath the map marker name
-bMapMarkersShowFactionName = 0
+bMapMarkersShowFactionName = 1
 
 ; add a hotkey to recenter the map menu
 bMapRecenterHotkey = 0
@@ -985,13 +985,13 @@ bMapRemembersPosition = 1
 bMapSelectableCompanions = 0
 
 ; show unconscious companions on the map, in red
-bMapShowUnconsciousCompanions = 0
+bMapShowUnconsciousCompanions = 1
 
 ; permanently reveal location markers on the Pip-Boy map when passing nearby
 bMarkNearbyLocationsOnMap = 0
 
 ; add right click to mark a note as unread
-bMarkNotesUnread = 0
+bMarkNotesUnread = 1
 
 ; use the player's weapon max range to determine the max VATS targeting distance
 bMaxVATSDistanceUsesWeaponRange = 0
@@ -1003,7 +1003,7 @@ bMeleeImpactEffectsFollowTarget = 1
 bMenuFadesIgnoreTimescale = 0
 
 ; add a hotkey 'Ctrl-F' to filter various menus
-bMenuSearch = 0
+bMenuSearch = 1
 
 ; allow fast travel in mid air
 bMidairFastTravel = 0
@@ -1021,7 +1021,7 @@ bModConsolePrintsIncludeName = 1
 bModifySkillPointsEarned = 0
 
 ; show the value modifier amount in the (+) and (-) for skills, and show skills/specials above 10/100
-bMoreDetailedStatsMenu = 0
+bMoreDetailedStatsMenu = 1
 
 ; calculate actor light levels (used for sneaking) more frequently
 bMoreFrequentNPCLightUpdates = 1
@@ -1096,7 +1096,7 @@ bNoDespawnVisibleStuckProjectiles = 1
 bNoDialogueZoom = 0
 
 ; prevent teammates from being disarmed in combat
-bNoDisarmCompanions = 0
+bNoDisarmCompanions = 1
 
 ; prevent the unequip sound when the player dies
 bNoDropWeaponSoundOnPlayerDeath = 0
@@ -1162,7 +1162,7 @@ bNoKnockdownInGodmode = 0
 bNoLocationPopup = 0
 
 ; don't freeze the level of encounter zones when they are first visited
-bNoLockEncounterZoneLevels = 0
+bNoLockEncounterZoneLevels = 1
 
 ; don't lock terminals after too many hacking attempts
 bNoLockFailedTerminals = 0
@@ -1177,7 +1177,7 @@ bNoMapMarkerAddedPopup = 0
 bNoMaxCasinoBet = 0
 
 ; remove minimum distance companions are shown on the world map
-bNoMinCompanionMapDistance = 0
+bNoMinCompanionMapDistance = 1
 
 ; prevents the player being selected when clicking in console
 bNonSelectablePlayerInConsole = 1
@@ -1267,7 +1267,7 @@ bNoVATSTargetInvisible = 0
 bNoWeaponConditionDamagePenalty = 0
 
 ; delay XP popups till the end of combat
-bNoXPBarInCombat = 0
+bNoXPBarInCombat = 1
 
 ; disable XP messages/sounds
 bNoXPMessages = 0
@@ -1279,19 +1279,19 @@ bNPCsCanDisarmPlayer = 0
 bNPCsCanSneakCritPlayer = 0
 
 ; alert nearby NPCs when mines explode
-bNPCsDetectMineExplosions = 0
+bNPCsDetectMineExplosions = 1
 
 ; make crippling/killing an enemy mid-throw cause them to drop a live grenade
-bNPCsDropLiveGrenades = 0
+bNPCsDropLiveGrenades = 1
 
 ; allow NPCs to drop weapons on death even if they are not out
 bNPCsDropWeaponHolsteredWeapon = 0
 
 ; make NPCs earn ammo casings when firing their weapons
-bNPCsEarnAmmoCasings = 0
+bNPCsEarnAmmoCasings = 1
 
 ; make NPCs take limb damage when falling
-bNPCsTakeLimbFallDamage = 0
+bNPCsTakeLimbFallDamage = 1
 
 ; adds hotkeys 0-9 to select options in the computers menu
 bNumberedComputerHotkeys = 1
@@ -1357,10 +1357,10 @@ bPlaceMarkersAtLocations = 1
 bPlantingLiveGrenadesRequiresWeaponSkill = 0
 
 ; stops player scale affecting melee damage
-bPlayerMeleeDamageIgnoresScale = 0
+bPlayerMeleeDamageIgnoresScale = 1
 
 ; stops player scale affecting non-melee damage
-bPlayerNonMeleeDamageIgnoresScale = 0
+bPlayerNonMeleeDamageIgnoresScale = 1
 
 ; stops popup menus moving the mouse to the center of the screen
 bPopupMenusDontMoveCursor = 0
@@ -1420,7 +1420,7 @@ bPrintErrorsToConsole = 0
 bPrintNewModsOnLoad = 0
 
 ; limit the quantity menu max count when transferring items that would overburden a companion
-bQuantityMenuRespectsCompanionCarryCap = 0
+bQuantityMenuRespectsCompanionCarryCap = 1
 
 ; don't hide the quest/location added text in menus
 bQuestTextVisibleInMenus = 0
@@ -1432,7 +1432,7 @@ bQuestTextVisibleWhileAiming = 0
 bQueueWeaponHolsteringWhileAnimsPlay = 1
 
 ; add hotkeys to instantly equip the cross-hair and container selections
-bQuickUse = 0
+bQuickUse = 1
 
 ; allow selecting facial hair on female characters
 bRaceMenuAllowFemaleFacialHair = 0
@@ -1468,7 +1468,7 @@ bReloadingWithFullClipSwitchesAmmoType = 0
 bReloadingWithNoAmmoSwapsAmmoTypes = 1
 
 ; make reload jams affected by reload speed multipliers
-bReloadJamsAffectedByAgility = 0
+bReloadJamsAffectedByAgility = 1
 
 ; scale reload sound pitch and length based on the game time multiplier
 bReloadSoundsAffectedByTimescale = 0
@@ -1477,7 +1477,7 @@ bReloadSoundsAffectedByTimescale = 0
 bReloadWhileFiring = 0
 
 ; remember the bobby pin health between locks (works through saves)
-bRememberBobbyPinHealth = 0
+bRememberBobbyPinHealth = 1
 
 ; stores/restores console history to ConsoleHistory.txt
 bRememberConsoleHistory = 1
@@ -1486,13 +1486,13 @@ bRememberConsoleHistory = 1
 bRememberPipboyScrollPositions = 1
 
 ; remember ammo type and count for all player weapons
-bRememberWeaponAmmos = 0
+bRememberWeaponAmmos = 1
 
 ; removes the chem worn off screen effect
 bRemoveChemWarnOffIMOD = 0
 
 ; remove queued cripple/critical messages for dead NPCs
-bRemoveDeadNPCCrippleCriticalMessages = 0
+bRemoveDeadNPCCrippleCriticalMessages = 1
 
 ; remove the useless downloads button from the main menu
 bRemoveDownloadsButton = 1
@@ -1516,7 +1516,7 @@ bRemoveWeaponDamageBuffer = 0
 bRepairAllConfirmation = 0
 
 ; show the items a weapon/armor can be repaired with by holding ALT while opening the repair menu
-bRepairItemsPreview = 0
+bRepairItemsPreview = 1
 
 ; disallow repairing if repair skill is less than the weapon's skill requirement
 bRepairRequiresWeaponSkill = 0
@@ -1555,7 +1555,7 @@ bRunAndGunAPInCombatOnly = 0
 bRunningCostsAP = 0
 
 ; scale movement speed when wading through water
-bRunSlowerInWater = 0
+bRunSlowerInWater = 1
 
 ; add a character selector for filtering the save/load menu
 bSaveCharacterSelector = 1
@@ -1618,7 +1618,7 @@ bShiftScreenshotHidesMenus = 1
 bShowActiveQuestNotesShowsAllStartedQuests = 0
 
 ; show a + beside ammo count if you have any alternate ammos
-bShowAlternateAmmoTypesAvailableInMenus = 0
+bShowAlternateAmmoTypesAvailableInMenus = 1
 
 ; show the total barter amount when the total is more than the merchant's caps
 bShowBarterTotalWhenOverSellLimit = 0
@@ -1636,7 +1636,7 @@ bShowCurrencyInContainers = 0
 bShowDoorsOnCompass = 0
 
 ; add a button to sort/filter the inventory
-bShowInventorySortButton = 0
+bShowInventorySortButton = 1
 
 ; show the source mod of perks in the perk menu
 bShowModNameInPerkDescriptions = 0
@@ -1672,7 +1672,7 @@ bSkipDeathcamHotkey = 1
 bSkipIntroVideo = 1
 
 ; skip the confirmation prompt when loading a save
-bSkipLoadSaveConfirmationPrompt = 0
+bSkipLoadSaveConfirmationPrompt = 1
 
 ; skip the assign skill points screen if you have no points to assign
 bSkipSkillMenuIfNoPointsToAssign = 1
@@ -1696,16 +1696,16 @@ bSleepOnChairs = 0
 bSleepWaitAnywhere = 0
 
 ; show the wake time on the sleep/wait slider
-bSleepWaitSliderShowsWakeTime = 0
+bSleepWaitSliderShowsWakeTime = 1
 
 ; holding W will continually spin the slot machine
 bSlotsAutoSpinHotkey = 0
 
 ; slowly regenerate breath when not underwater
-bSlowBreathRegen = 0
+bSlowBreathRegen = 1
 
 ; smooth the ironsights animation by interpolating between the non-aiming and aiming camera positions
-bSmoothIronsightsCameraTransition = 0
+bSmoothIronsightsCameraTransition = 1
 
 ; allow sneak attacks on enemies if you're undetected but not sneaking
 bSneakAttackWithoutCrouching = 0
@@ -1735,10 +1735,10 @@ bSortPipboyNotes = 0
 bSortPipboyQuests = 0
 
 ; sort the Pip-Boy repair menu
-bSortPipboyRepairMenu = 0
+bSortPipboyRepairMenu = 1
 
 ; sort the recipe menu
-bSortRecipeMenu = 0
+bSortRecipeMenu = 1
 
 ; fix a vanilla bug where unavailable radios aren't sorted to the bottom of the list
 bSortUnavailableRadiosToBottom = 1
@@ -1759,13 +1759,13 @@ bStartMenuQuickLoad = 0
 bStatsMenuPercentageXP = 0
 
 ; show the time remaining for temporary status effects in the Stats Menu
-bStatsMenuShowEffectTimeRemaining = 0
+bStatsMenuShowEffectTimeRemaining = 1
 
 ; don't alert actors when stealing their items (excludes pickpocketing)
 bStealingSendsNoAlarm = 0
 
 ; make the fThrowingStrengthPenalty gamesetting also affect grenades and mines
-bStrengthAffectsAllThrowables = 0
+bStrengthAffectsAllThrowables = 1
 
 ; show actor names in subtitles
 bSubtitlesShowActorNames = 0
@@ -1783,10 +1783,10 @@ bSynchronizeContainerCategories = 1
 bTabBackInStartMenu = 0
 
 ; make tab close the pipboy from within the Inventory keys and Stats limb selection submenus
-bTabClosesPipboyFromKeyAndLimbMenus = 0
+bTabClosesPipboyFromKeyAndLimbMenus = 1
 
 ; add hotkey Tab to close terminals
-bTabClosesTerminals = 0
+bTabClosesTerminals = 1
 
 ; show a confirmation message when taking all items from a container
 bTakeAllConfirmation = 0
@@ -1804,10 +1804,10 @@ bTargetProjectilesInVATS = 0
 bTerminalFadeTime = 0
 
 ; gray out read terminal entries
-bTerminalGreyReadNotes = 0
+bTerminalGreyReadNotes = 1
 
 ; adds hotkeys shift and right mouse button to instantly display the current terminal text
-bTerminalInstantDisplayHotkey = 0
+bTerminalInstantDisplayHotkey = 1
 
 ; scale minigame speed by the global time multiplier
 bTimescaleAffectsMinigames = 0
@@ -1834,7 +1834,7 @@ bUltrawideSupport = 0
 bUnequipBrokenArmor = 0
 
 ; allow unequipping weapon mods
-bUnequipWeaponMods = 0
+bUnequipWeaponMods = 1
 
 ; add a * to the prompt for NPCs who haven't been spoken to
 bUnspokenNPCIndicator = 0
@@ -1861,7 +1861,7 @@ bUseFirstPersonEmptyClipSound = 0
 bUseHitLocationInCinematicKillcams = 0
 
 ; allow use of WASD keys as arrows in menus, and space to accept
-bUseWASDAsArrowKeys = 0
+bUseWASDAsArrowKeys = 1
 
 ; show repair kits in the weapon repair menu
 bUseWeaponRepairKitsInRepairMenu = 0
@@ -1879,7 +1879,7 @@ bVATSAPDisplayIncludesReloadCost = 0
 bVATSAutoTargetHead = 0
 
 ; remove queued VATS attacks on NPC weapons if they get disarmed
-bVATSDequeueWeaponShotsOnDisarm = 0
+bVATSDequeueWeaponShotsOnDisarm = 1
 
 ; press the Pip-Boy key to instantly end the VATS killcam
 bVatsExitKey = 1
@@ -1891,7 +1891,7 @@ bVATSHipFire = 0
 bVATSIgnoreNonExplosiveProjectiles = 0
 
 ; stop firing the current burst if the target is already dead
-bVATSStopBurstIfTargetDead = 0
+bVATSStopBurstIfTargetDead = 1
 
 ; stop rotating to follow targets once they are dead
 bVATSStopFollowingDeadTargets = 1
@@ -1903,7 +1903,7 @@ bVATSTargetPlayerProjectiles = 0
 bVATSThrowablesUseVisibility = 0
 
 ; show the H2O restored instead of HP when viewing water sources
-bWaterSourcesShowH2O = 0
+bWaterSourcesShowH2O = 1
 
 ; use left/right dpad to cycle weapon hotkeys
 bWeaponCycleUpDownHotkeys = 0
@@ -1927,10 +1927,10 @@ bWeightlessAidItems = 0
 bWeightlessItems = 0
 
 ; makes armor weightless while it is worn
-bWeightlessWornArmor = 0
+bWeightlessWornArmor = 1
 
 ; worn power armor is weightless
-bWeightlessWornPowerArmor = 0
+bWeightlessWornPowerArmor = 1
 
 ; set the condition of the items returned from crafting (default is 80%)
 fCraftedItemHealthPct = 80.000000
@@ -2250,10 +2250,10 @@ bHideAutosaveMessage = 0
 bHighlightActiveSave = 1
 
 ; create a named save every time the max slot is reached
-bPeriodicFullsave = 0
+bPeriodicFullsave = 1
 
 ; prevent timed autosaves if in [Danger]
-bPreventAutosaveInCombat = 0
+bPreventAutosaveInCombat = 1
 
 ; prevent timed autosaves if godmode is enabled
 bPreventAutosaveInTGM = 0
@@ -2268,7 +2268,7 @@ bReplaceContinueWithQuicksave = 0
 bSaveOnCraft = 0
 
 ; create a save when exiting the game
-bSaveOnExitGame = 0
+bSaveOnExitGame = 1
 
 ; autosave when discovering a new location
 bSaveOnLocationDiscovered = 0
@@ -2277,13 +2277,13 @@ bSaveOnLocationDiscovered = 0
 bSaveOnPickpocket = 0
 
 ; autosave when completing a quest
-bSaveOnQuestCompleted = 0
+bSaveOnQuestCompleted = 1
 
 ; create a save before the levelup menu is shown
 bSavePreLevelUp = 0
 
 ; delay between autosaves in seconds
-iAutoSaveTimer = 0
+iAutoSaveTimer = 600
 
 ; hotkey to create a full (named) save
 iCreateSaveKey = 0
@@ -2301,7 +2301,7 @@ iMaxAutoSaveCount = 3
 iMaxIncrementalSaveCount = 5
 
 ; prevent autosaves within this time of each other (in seconds)
-iMinAutosaveInterval = 0
+iMinAutosaveInterval = 30
 
 ; hotkey to reload the current loaded save (as if the player died)
 iReloadCurrentSaveKey = 0
@@ -2580,7 +2580,7 @@ bNPCs = 1
 bPlayer = 1
 
 ; additional movement multiplier per agility point
-fAgilityMovementSpeedMult = 0.020000
+fAgilityMovementSpeedMult = 0.005000
 
 
 [Weapon Requirements Matter]
@@ -2607,7 +2607,7 @@ sStrengthRequiredMessage = You are too weak to use this weapon.
 bCompactGuesses = 0
 
 ; turn incorrect guesses into .....
-bMarkGuessesAsDuds = 0
+bMarkGuessesAsDuds = 1
 
 ; keep matching characters when marking guesses as duds, e.g. A.S..ING
 bMarkGuessesAsDudsKeepMatchingCharacters = 0
@@ -2961,19 +2961,19 @@ fAimingScaleY = 0.600000
 [Weightless Worn Power Armor]
 
 ; make power armor only weightless for player/teammates if they have the Power Armor Training perk
-bRequirePowerArmorTraining = 0
+bRequirePowerArmorTraining = 1
 
 ; make power armor helmets only weightless if torso power armor is also equipped
-bRequireTorsoArmorForWeightlessHelmet = 0
+bRequireTorsoArmorForWeightlessHelmet = 1
 
 ; multiplier applied to worn power armor weight
-fWeightMult = 0.000000
+fWeightMult = 0.700000
 
 
 [Weightless Worn Armor]
 
 ; multiplier applied to worn armor weight
-fWeightMult = 0.000000
+fWeightMult = 0.900000
 
 
 [Robot Companion Healing]
@@ -3253,10 +3253,10 @@ bDebug = 0
 bDebugInGodMode = 0
 
 ; hide the mod button for non-modifiable weapons
-bHideModButtonForNonModdableWeapons = 0
+bHideModButtonForNonModdableWeapons = 1
 
 ; show unowned weapon mods
-bItemModMenuShowUnownedMods = 0
+bItemModMenuShowUnownedMods = 1
 
 ; only allow weapon modding if at a workbench
 bRequireWorkbench = 0
@@ -3451,7 +3451,7 @@ bReloads = 1
 [Water Scales Movement Speed]
 
 ; max movement speed penalty when wading through water
-fWadingMovementMult = 0.000000
+fWadingMovementMult = 0.700000
 
 
 [Agility Affects Jump Height]
@@ -3788,7 +3788,7 @@ fVerticalSensitivity = 0.000000
 [Faster Main Menu]
 
 ; skip the 0-3s wait for the current load screen to fade out
-bSkipLoadScreenWait = 0
+bSkipLoadScreenWait = 1
 
 
 [Default Pipboy Tab]
@@ -4065,7 +4065,7 @@ iLabelOffsetX = 0
 ; label y offset
 iLabelOffsetY = 0
 sArmorLabel = ARMOR
-sWeaponLabel = 
+sWeaponLabel = WEAPON
 
 
 [Place Marker Hotkey]
@@ -4457,10 +4457,11 @@ sHolotapeMessageTitle = Holotape Acquired
 [Hostiles Prioritize Player]
 
 ; chance to override a companion with player during combat
-fSwapToPlayerChanceMidCombat = 0.700000
+fSwapToPlayerChanceMidCombat = 0.500000
 
 ; chance to override a companion with player on combat start
-fSwapToPlayerChanceStartCombat = 0.900000
+fSwapToPlayerChanceStartCombat = 0.700000
 
 ; detection level required to switch to targeting the player
-iPlayerDetectionThreshold = 1
+iPlayerDetectionThreshold = 40
+

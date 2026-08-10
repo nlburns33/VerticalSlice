@@ -4579,3 +4579,5 @@ fSwapToPlayerChanceStartCombat = 0.700000
 
 ; detection level required to switch to targeting the player
 iPlayerDetectionThreshold = 40
+
+
